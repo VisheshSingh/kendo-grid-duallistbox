@@ -1,0 +1,258 @@
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css");
+@import url("https://www.telerik.com/kendo-react-ui/npm/node_modules//@progress/kendo-theme-default/dist/all.css");
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFWJ0bbck.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFUZ0bbck.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFWZ0bbck.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVp0bbck.woff2) format("woff2");
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFWp0bbck.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFW50bbck.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0b.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+body {
+  font-family: "RobotoRegular",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  margin: 0;
+}
+
+my-app {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  min-height: 80px;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+my-app > .k-icon.k-i-loading {
+  font-size: 64px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.example-wrapper {
+  min-height: 280px;
+  align-content: flex-start;
+}
+
+.example-wrapper p, .example-col p {
+  margin: 0 0 10px;
+}
+
+.example-wrapper p:first-child, .example-col p:first-child {
+  margin-top: 0;
+}
+
+.example-col {
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.example-config {
+  margin: 0 0 20px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.event-log {
+  margin: 0;
+  padding: 0;
+  max-height: 100px;
+  overflow-y: auto;
+  list-style-type: none;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+}
+
+.event-log li {
+  margin: 0;
+  padding: .3em;
+  line-height: 1.2em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.event-log li:last-child {
+  margin-bottom: -1px;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Open Sans';
+  padding: 50px;
+}
+
+.grid {
+  overflow: auto;
+  /* Can this be replaced with bootstrap calsses? */
+  .k-grid-min-width: 1300px;
+  .k-grid-overflow: auto;
+}
+.grid .dropdown {
+  text-align: right;
+}
+.grid .dropdown-toggle {
+  border: 0;
+}
+.grid .dropdown-toggle:hover {
+  border: 0 !important;
+}
+.grid .dropdown-menu {
+  right: 0;
+  left: auto;
+}
+
+.k-grid-header .k-i-sort-asc-sm, .k-grid-header .k-i-sort-desc-sm, .k-grid-header .k-sort-order {
+  color: #fff;
+}
+
+.k-grid tr.k-alt {
+  background-color: #F6FBFD;
+  font-weight: 400;
+}
+
+.k-grid-header, .k-header {
+  background-color: #435064;
+  border-color: #ccc;
+  color: #fff;
+  font-weight: 600;
+}
+
+.k-header th {
+  border-bottom: 0;
+}
+
+.k-dropdown .k-dropdown-wrap {
+  background: none;
+  color: #fff;
+  border: 0;
+}
+
+.k-grid th, .k-grid tr {
+  border-right: 1px solid #ccc;
+  border-bottom: 0;
+}
+.k-grid tr {
+  font-size: 15px;
+  color: #333;
+}
+
+.k-master-row a {
+  color: #369;
+}
+
+.k-master-row:hover, .k-master-row k-alt:hover {
+  background-color: rgba(21, 156, 195, 0.1) !important;
+  background-opacity: 10% !important;
+}
+
+.k-grid td.k-state-selected, .k-grid tr.k-state-selected {
+  color: inherit;
+  background-color: transparent;
+}
+
+.k-button,
+.k-button.k-primary {
+  background: #fff;
+  background-image: none;
+  border: 1px solid #006990;
+  border-radius: 0.4rem;
+  color: #006990;
+  font-weight: 400;
+}
+
+.k-button:hover,
+.k-button.k-primary:hover {
+  background: #006990;
+  border: 1px solid #006990;
+  color: #fff !important;
+}
+
+.k-grid-pager {
+  background-color: #435064;
+  color: #fff;
+}
+
+.k-pager-wrap .k-link, .k-pager-numbers .l-link, .k-pager-wrap .k-state-selected {
+  background-color: #fff;
+  color: #006990 !important;
+  opacity: 1;
+}
+
+.k-pager-wrap .k-pager-numbers li {
+  border-right: 1px solid #ccc;
+}
+
+.k-pager-numbers .k-link.k-state-selected, .k-pager-numbers .k-link:link.k-state-selected {
+  background-color: #006990;
+  color: #fff !important;
+}
+
+.k-pager-first {
+  margin-right: 20px;
+  border-radius: 0.4rem;
+}
+
+.k-pager-nav:nth-child(2) {
+  border-radius: 0.4rem 0 0 0.4rem;
+}
+
+.k-pager-nav:nth-child(3) {
+  border-radius: 0 0.4rem 0.4rem 0;
+}
+
+.k-pager-last {
+  margin-left: 20px;
+  border-radius: 0.4rem;
+}

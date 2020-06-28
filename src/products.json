@@ -1,0 +1,27 @@
+[
+  {
+    "ProductID": 1,
+    "ProductName": "Chai",
+    "isActive": 0
+  },
+  {
+    "ProductID": 2,
+    "ProductName": "Biscuit",
+    "isActive": 0
+  },
+  {
+    "ProductID": 3,
+    "ProductName": "Coffee",
+    "isActive": 1
+  },
+  {
+    "ProductID": 4,
+    "ProductName": "Newspaper",
+    "isActive": 1
+  },
+  {
+    "ProductID": 5,
+    "ProductName": "Snacks",
+    "isActive": 1
+  }
+]
