@@ -69,7 +69,6 @@ class App extends React.Component {
     const selectedItems = this.state.deactivatedItems.filter(
       item => item.selected
     );
-    console.log({ selectedItems });
     const diffArr = this.state.deactivatedItems.filter(
       a => !selectedItems.map(b => b.selected).includes(a.selected)
     );
@@ -83,7 +82,6 @@ class App extends React.Component {
     const selectedItems = this.state.activatedItems.filter(
       item => item.selected
     );
-    console.log({ selectedItems });
     const diffArr = this.state.activatedItems.filter(
       a => !selectedItems.map(b => b.selected).includes(a.selected)
     );
