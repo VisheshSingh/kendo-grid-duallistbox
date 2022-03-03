@@ -14,74 +14,92 @@
   dependencies:
     tslib "^1.7.0"
 
+"@progress/kendo-drawing@1.5.6":
+  version "1.5.6"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-drawing/-/kendo-drawing-1.5.6.tgz#5ad461d7d71c264672445b06e48827a4b5654c02"
+  dependencies:
+    pako "^1.0.5"
+
+"@progress/kendo-file-saver@^1.0.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-file-saver/-/kendo-file-saver-1.1.1.tgz#4225affb7064fe9e12d3a89f36e00ab6c92deef0"
+
 "@progress/kendo-popup-common@^1.2.2":
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/@progress/kendo-popup-common/-/kendo-popup-common-1.6.0.tgz#aabe9af0e1eff03ba618dd6d0dad56ba7d4463be"
 
-"@progress/kendo-react-animation@0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@progress/kendo-react-animation/-/kendo-react-animation-0.4.0.tgz#80d737d52bceab2a3d887c138233b460dd11e5aa"
+"@progress/kendo-react-animation@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-animation/-/kendo-react-animation-1.0.0.tgz#079acc8c91a8d51d388d7f815d0f72827882d052"
   dependencies:
-    "@progress/kendo-react-common" "0.4.0"
+    "@progress/kendo-react-common" "1.0.0"
     prop-types "^15.6.0"
     react-transition-group "^2.2.0"
 
-"@progress/kendo-react-common@0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@progress/kendo-react-common/-/kendo-react-common-0.4.0.tgz#d1db9ce0ca91dd4491b329634ffad3e4f315a46c"
+"@progress/kendo-react-common@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-common/-/kendo-react-common-1.0.0.tgz#cb7618cdc46b363be10e209f1095f75b76c7b2bc"
   dependencies:
     prop-types "^15.6.0"
 
-"@progress/kendo-react-dateinputs@0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@progress/kendo-react-dateinputs/-/kendo-react-dateinputs-0.4.0.tgz#b3367dc20021583dbd342c73579695ffa5504c25"
+"@progress/kendo-react-dateinputs@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-dateinputs/-/kendo-react-dateinputs-1.0.0.tgz#65cdae140f24ae52bdbd2e87e50fd37482c30965"
   dependencies:
     "@progress/kendo-date-math" "^1.0.3"
-    "@progress/kendo-react-common" "0.4.0"
+    "@progress/kendo-react-common" "1.0.0"
+    "@progress/kendo-react-popup" "1.0.0"
     prop-types "^15.6.0"
 
-"@progress/kendo-react-dropdowns@0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@progress/kendo-react-dropdowns/-/kendo-react-dropdowns-0.4.0.tgz#7985ff3bf207b24e181371f719e83a1c861b37f4"
+"@progress/kendo-react-dropdowns@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-dropdowns/-/kendo-react-dropdowns-1.0.0.tgz#ff09cb0127c354bb84141ea9a48fad8df01bf976"
   dependencies:
-    "@progress/kendo-react-common" "0.4.0"
-    "@progress/kendo-react-popup" "0.4.0"
+    "@progress/kendo-react-common" "1.0.0"
+    "@progress/kendo-react-popup" "1.0.0"
     prop-types "^15.6.0"
 
-"@progress/kendo-react-grid@0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@progress/kendo-react-grid/-/kendo-react-grid-0.4.0.tgz#d6c60a37e0bf37cbc5363d90745e675597feade3"
+"@progress/kendo-react-grid@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-grid/-/kendo-react-grid-1.0.0.tgz#adf34ab47c9eb1ddede53cacc436d27d70fb78fb"
   dependencies:
-    "@telerik/kendo-draggable" "^1.6.0"
+    "@progress/kendo-react-common" "1.0.0"
+    "@telerik/kendo-draggable" "^1.7.1"
     prop-types "^15.6.0"
 
-"@progress/kendo-react-inputs@0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@progress/kendo-react-inputs/-/kendo-react-inputs-0.4.0.tgz#26c932f84e77773f4907136be8cb6d6cbdea2fe7"
+"@progress/kendo-react-inputs@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-inputs/-/kendo-react-inputs-1.0.0.tgz#859f19578ef5f49d93eb25aeab7ae90899d455ad"
   dependencies:
-    "@progress/kendo-react-common" "0.4.0"
-    object-assign "^4.0.1"
+    "@progress/kendo-react-common" "1.0.0"
+    "@telerik/kendo-draggable" "^1.7.1"
     prop-types "^15.6.0"
 
-"@progress/kendo-react-intl@0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@progress/kendo-react-intl/-/kendo-react-intl-0.4.0.tgz#0a18affb00921e31f3e99887eaf04921240a236c"
+"@progress/kendo-react-intl@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-intl/-/kendo-react-intl-1.0.0.tgz#44b5a80f3dd2ba1caeec877e0cec67af798af785"
   dependencies:
     "@telerik/kendo-intl" "^1.3.0"
-    prop-types "^15.5.10"
-
-"@progress/kendo-react-popup@0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@progress/kendo-react-popup/-/kendo-react-popup-0.4.0.tgz#b6861ffc06bd763b3e62f54f9c1fedb8c6a0a07f"
-  dependencies:
-    "@progress/kendo-popup-common" "^1.2.2"
-    "@progress/kendo-react-animation" "0.4.0"
-    "@progress/kendo-react-common" "0.4.0"
     prop-types "^15.6.0"
 
-"@telerik/kendo-draggable@^1.6.0":
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/@telerik/kendo-draggable/-/kendo-draggable-1.7.1.tgz#b1fa1ebadd7ad5eb3d437d8353ee09caa04888e5"
+"@progress/kendo-react-pdf@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-pdf/-/kendo-react-pdf-1.0.1.tgz#053e80551491c6c86f31f89f426e3166929be919"
+  dependencies:
+    "@progress/kendo-file-saver" "^1.0.1"
+
+"@progress/kendo-react-popup@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-popup/-/kendo-react-popup-1.0.0.tgz#a40bca8035b6e16168d0c8b50082ab23c1d6aad1"
+  dependencies:
+    "@progress/kendo-popup-common" "^1.2.2"
+    "@progress/kendo-react-animation" "1.0.0"
+    "@progress/kendo-react-common" "1.0.0"
+    prop-types "^15.6.0"
+
+"@telerik/kendo-draggable@^1.7.1":
+  version "1.9.2"
+  resolved "https://registry.yarnpkg.com/@telerik/kendo-draggable/-/kendo-draggable-1.9.2.tgz#191cb2fa1051d1c727d570d24e732872d64541ae"
 
 "@telerik/kendo-intl@^1.3.0":
   version "1.4.1"
@@ -1668,7 +1686,7 @@ compressible@~2.0.13:
 
 compression@^1.5.2:
   version "1.7.2"
-  resolved "http://registry.npmjs.org/compression/-/compression-1.7.2.tgz#aaffbcd6aaf854b44ebb280353d5ad1651f59a69"
+  resolved "https://registry.npmjs.org/compression/-/compression-1.7.2.tgz#aaffbcd6aaf854b44ebb280353d5ad1651f59a69"
   dependencies:
     accepts "~1.3.4"
     bytes "3.0.0"
@@ -4148,16 +4166,6 @@ jest@20.0.4:
   dependencies:
     jest-cli "^20.0.4"
 
-jquery.2@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/jquery.2/-/jquery.2-1.0.0.tgz#a8995f96fb804c335d08b90a57ec47db0faae6f8"
-  dependencies:
-    jquery "^2.0"
-
-jquery@<3.0.0, jquery@^2.0:
-  version "2.2.4"
-  resolved "https://registry.yarnpkg.com/jquery/-/jquery-2.2.4.tgz#2c89d6889b5eac522a7eea32c14521559c6cbf02"
-
 js-base64@^2.1.9:
   version "2.4.5"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.4.5.tgz#e293cd3c7c82f070d700fc7a1ca0a2e69f101f92"
@@ -4184,7 +4192,7 @@ jsbn@~0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/jsbn/-/jsbn-0.1.1.tgz#a5e654c2e5a2deb5f201d96cefbca80c0ef2f513"
 
-jsdom@^9.12.0, jsdom@^9.4.1:
+jsdom@^9.12.0:
   version "9.12.0"
   resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-9.12.0.tgz#e8c546fffcb06c00d4833ca84410fed7f8a097d4"
   dependencies:
@@ -4284,20 +4292,6 @@ jsx-ast-utils@^2.0.0:
   resolved "https://registry.yarnpkg.com/jsx-ast-utils/-/jsx-ast-utils-2.0.1.tgz#e801b1b39985e20fffc87b40e3748080e2dcac7f"
   dependencies:
     array-includes "^3.0.3"
-
-kendo-react@2.6.5:
-  version "2.6.5"
-  resolved "https://registry.yarnpkg.com/kendo-react/-/kendo-react-2.6.5.tgz#4c454215788c0a04924f89db220223a0be14ef04"
-  dependencies:
-    jquery.2 "^1.0.0"
-    jsdom "^9.4.1"
-    kendo-ui-core "^2016.2.607"
-
-kendo-ui-core@^2016.2.607:
-  version "2016.3.1317"
-  resolved "https://registry.yarnpkg.com/kendo-ui-core/-/kendo-ui-core-2016.3.1317.tgz#96877563c05c5b39c8ecad4598294944a29a6830"
-  dependencies:
-    jquery "<3.0.0"
 
 killable@^1.0.0:
   version "1.0.0"
@@ -5101,6 +5095,10 @@ package-json@^4.0.0:
     registry-auth-token "^3.0.1"
     registry-url "^3.0.3"
     semver "^5.1.0"
+
+pako@^1.0.5:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.11.tgz#6c9599d340d54dfd3946380252a35705a6b992bf"
 
 pako@~1.0.5:
   version "1.0.6"
@@ -7034,8 +7032,8 @@ uri-js@^4.2.1:
     punycode "^2.1.0"
 
 urijs@^1.16.1:
-  version "1.19.1"
-  resolved "https://registry.yarnpkg.com/urijs/-/urijs-1.19.1.tgz#5b0ff530c0cbde8386f6342235ba5ca6e995d25a"
+  version "1.19.9"
+  resolved "https://registry.yarnpkg.com/urijs/-/urijs-1.19.9.tgz#3b15844835de3732866d420768c16f24be7d3e65"
 
 urix@^0.1.0:
   version "0.1.0"
